@@ -40,12 +40,46 @@ section img {
    pointer-events: none;
 }
 
-#cave{
-  height: 100vh;
+section img #desert {
+  mix-blend-mode: screen;
 }
+
 
 #wolf{
   height: 40vw;
   width: 40vw;
-  margin-top: 20%;
+  top: initial;
+
+}
+
+#cave{
+  height: 100vh;
+  top: initial;
+  z-index: 1000;
+}
+
+#text {
+  position: absolute;
+  font-size: 8vw;
+  font-weight: 200;
+}
+
+#text span {
+  font-weight: 700;
+}
+
+#btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 80px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 50px;
+  background: #fff;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  color: #2b1055;
+  z-index: 10000;
 }
