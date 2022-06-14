@@ -1,10 +1,13 @@
 html,
 body {
-display: flex;
-justify-content: center;
-height: 100vh;
-width: 100%;
-background:linear-gradient(#2b1055, #7597de);
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(#2b1055, #7597de);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,8 +18,7 @@ a {
 }
 
 * {
-  padding: 0;
-  margin: 0;
+
   box-sizing: border-box;
 }
 
@@ -29,39 +31,49 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 3px solid red;
 }
 
 section img {
-   position: absolute;
-   top:0;
-   left:0;
-   width: 2000px;
-   pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  pointer-events: none;
+}
+
+section img #moon {
+  top: -100%;
+  mix-blend-mode: screen;
 }
 
 section img #desert {
   mix-blend-mode: screen;
 }
 
+section img #wolf {
+  mix-blend-mode: screen;
+}
 
-#wolf{
+
+
+#wolf {
   height: 40vw;
   width: 40vw;
-  top: initial;
+  margin-top: -100%;
 
 }
 
-#cave{
+#cave {
   height: 100vh;
-  top: initial;
+  top: -100%;
   z-index: 1000;
 }
 
 #text {
   position: absolute;
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 200;
+  top: -100%;
 }
 
 #text span {
@@ -70,7 +82,7 @@ section img #desert {
 
 #btn {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 80px;
@@ -82,4 +94,32 @@ section img #desert {
   font-size: 1.4rem;
   color: #2b1055;
   z-index: 10000;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  align-items: center;
+}
+
+button {
+  color: #7B7B7B;
+  background-color: #FFF;
+  border-radius: 1rem;
+  border: 1px solid;
+  font-size: 20px;
+  font-weight: 300;
+  width: 300px;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  margin-right: 2%;
+}
+button:hover {
+  transform: translateY(-3px);
+  transition: 1s;
+  box-shadow: 0 10px 20px rgba(166,173,201,0.2);
 }
