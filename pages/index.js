@@ -14,18 +14,12 @@ export default function Home() {
       duration: 500,
       easing: 'easeInOutSine'
     });
-
-    animation.add({
-      targets: '#stars',
-      top: '0px',
-      duration: 1000,
-      easing: 'easeInOutSine'
-    });
+ 
 
     animation.add({
       targets: '#wolf',
-      marginTop: '10%',
-      duration: 1000,
+      marginTop: '50%',
+      duration: 500,
       easing: 'easeInOutSine'
     });
 
@@ -38,7 +32,8 @@ export default function Home() {
 
     animation.add({
       targets: '#text',
-      top: '35%',
+      top: '40%',
+      left: '53%',
       duration: 500,
       easing: 'easeInOutSine'
     });
@@ -49,15 +44,14 @@ export default function Home() {
   return (
     <>
       <nav>
-      <h2>Timeline Animations using Javascript</h2>
-      <button>Caption</button>
+        <h2>Timeline Animations using Javascript</h2>
+        <button>Caption</button>
       </nav>
       <section>
-        {/* <img src="stars.png" id="stars" /> */}
-        <img src="desert.jpg" id="moon" />
-        <img src="wolf.png" id="wolf" />
+        <img src="https://res.cloudinary.com/dogjmmett/image/upload/v1655218735/desert_vyi5on.jpg" id="moon" />
+        <img src="https://res.cloudinary.com/dogjmmett/image/upload/v1655218728/wolf_xficul.png" id="wolf" />
         <a href="#" id="btn">Play</a>
-        <img src="cave.png" id="cave" />
+        <img src="https://res.cloudinary.com/dogjmmett/image/upload/v1655218726/cave_upzxju.png" id="cave" />
         <h2 id="text"><span>A</span>wesome</h2>
       </section>
     </>
